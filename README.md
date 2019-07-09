@@ -7,6 +7,7 @@ conftest [here](https://github.com/instrumenta/conftest)
 
 
 ```bash
+$ helm template . | conftest test -
    Pod/release-name-test-test-connection must specify a container image tag (busybox)
    Service/release-name-test should contain label app.kubernetes.io/component
    Service/release-name-test should contain label app.kubernetes.io/part-of
@@ -16,6 +17,5 @@ conftest [here](https://github.com/instrumenta/conftest)
    Deployment/release-name-test should contain label app.kubernetes.io/component
    Deployment/release-name-test should contain label app.kubernetes.io/part-of
 
-$ helm template . | conftest test -
 
 ```
